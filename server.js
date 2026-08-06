@@ -58,3 +58,6 @@ app.listen(PORT, () => {
   console.log(`📝 Environment: ${process.env.NODE_ENV}`);
   console.log(`🌐 CORS enabled for: ${process.env.FRONTEND_URL || 'http://localhost:3000'}`);
 });
+
+// Export app for Vercel
+module.exports = app;
