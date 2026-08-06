@@ -21,7 +21,10 @@ connectDB();
 // Enable CORS (allows frontend on different port to call this backend)
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+    origin: [
+      'https://front-end-75me.vercel.app',
+      'http://localhost:3000'
+    ],
     credentials: true,
   })
 );
